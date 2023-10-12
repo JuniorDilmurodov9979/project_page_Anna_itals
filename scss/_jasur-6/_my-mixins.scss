@@ -1,0 +1,11 @@
+@mixin mobile-first($min) {
+    @media only screen and (min-width:$min) {
+        @content;
+    }
+} 
+@mixin list-unstyle {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }

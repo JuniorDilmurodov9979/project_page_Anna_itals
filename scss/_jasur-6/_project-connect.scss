@@ -1,0 +1,113 @@
+@import 'my-mixins';
+
+.project-connect {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #aea38b;
+}
+.project-connect__title-wrapper {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.project-connect__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+}
+.project-connect__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: normal;
+    color: #fff;
+}
+.project-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+.project-form__input {
+    // max-width: 300px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.project-form__input:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.project-form__input::placeholder {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+.project-form__btn {
+    // max-width: 300px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    color: #fff;
+    background-color: #d8b152;
+    border: none;
+}
+
+@include mobile-first(500px) {
+    .project-connect__title-wrapper {
+        max-width: 100%;
+    }
+    .project-connect__title {
+        font-size: 32px;
+    }
+    .project-connect__desc {
+        font-size: 16px;
+    }
+}
+@include mobile-first(1024px) {
+    .project-connect {
+        padding-top: 120px;
+        padding-bottom: 142px;
+    }
+    .project-connect__title-wrapper {
+        margin-bottom: 60px;
+    }   
+    .project-connect__title {
+        font-size: 46px;
+    }
+    .project-connect__desc,.project-form__input::placeholder,.project-form__btn {
+        font-size: 18px;
+    }
+    .project-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-form__input,.project-form__btn {
+        max-width: 300px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 18px;
+    }
+    .project-form__input:nth-child(2) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@include mobile-first(1200px) {
+    .project-form__input,.project-form__btn {
+        max-width: 360px;
+    }
+}

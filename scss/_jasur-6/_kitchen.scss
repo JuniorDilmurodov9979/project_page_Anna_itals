@@ -1,0 +1,165 @@
+.kitchen {
+    padding-top: 40px;
+}
+.container-project {
+    padding: 0 20px;
+}
+.kitchen__inner {
+    
+}
+.kitchen__desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+.kitchen__desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 150%; /* 21px */
+    color: #424242;
+}
+.kitchen__img-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.kitchen__img {
+    max-width: 140px;
+    width: 100%;
+    max-height: 180px;
+    height: 100%;
+}
+.kitchen__end {
+    
+}
+.kitchen__title-wrapper {
+    
+}
+.kitchen__title {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    color: #424242;
+}
+.kitchen__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    @include list-unstyle;
+    margin-bottom: 20px;
+}
+.kitchen__item {
+    
+}
+.kitchen__item-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #424242;
+    font-size: 13px;
+    line-height: 150%; /* 21px */
+}
+.kitchen__listU-img {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+}
+.hotel__article {
+    
+}
+.hotel__article-desc-wrapper {
+    
+}
+.hotel__article-desc {
+    
+}
+@include mobile-first(375px) {
+    .container-project {
+        padding: 0 37px;
+    }
+    .kitchen__item-desc,.kitchen__desc {
+        font-size: 14px;
+    }
+    .kitchen__img-wrapper {
+        justify-content: center;
+        width: 100%;
+        column-gap: 20px;
+    }
+}
+@include mobile-first(500px) {
+    .kitchen__img {
+        max-width: 450px;
+        max-height: 250px;
+    }
+    .kitchen__listU-img {
+        max-width: 950px;
+        height: 230px;
+    }
+}
+@include mobile-first(600px) {
+    .kitchen__title {
+        font-size: 36px;
+    }
+    .kitchen__desc {
+        font-size: 16px;
+    }
+    .kitchen__item-desc {
+        font-size: 16px;
+    }
+    .kitchen__listU-img {
+        height: 310px;
+    }
+}
+@include mobile-first(1024px) {
+    .kitchen__inner {
+        display: flex;
+        flex-direction: row-reverse;   
+        column-gap: 20px;
+    }
+    .kitchen__img-wrapper {
+        align-items: start;
+    }
+    .kitchen__img {
+        max-width: 220px;
+        max-height: 240px;
+    }
+    .kitchen__img:last-child {
+        margin-top: auto;
+    }
+    .kitchen__desc-wrapper {
+        max-width: 560px;
+        width: 100%;
+    }
+    .kitchen__title {
+        font-size: 42px;
+    }
+    .kitchen__end {
+        display: flex;
+        align-items: end;
+        column-gap: 20px;
+    }
+    .kitchen__listU-img {
+        max-width: 560px;
+        height: 370px;
+    }
+}
+@include mobile-first(1200px) {
+    .kitchen__img {
+        max-width: 260px;
+        max-height: 280px;
+    }
+    .kitchen__title {
+        margin-top: 120px;
+        margin-bottom: 40px;
+        font-size: 46px;
+    }
+    .kitchen__desc,.kitchen__item-desc {
+        font-size: 18px;
+    }
+    .kitchen__inner,.kitchen__img-wrapper,.kitchen__end {
+        column-gap: 40px;
+    }
+}
